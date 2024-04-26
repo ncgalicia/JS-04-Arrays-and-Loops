@@ -1,4 +1,4 @@
-// *** 1.- Suma de resistencias **/// 
+///////////// ************* 1.- Suma de resistencias *************/////////
 const sumaResistencia = [-1,5,6,3]
 const sumaResistencia2 = [14,3.5,6]
 const sumaResistencia3 = [8,15,100]
@@ -25,7 +25,7 @@ sumasResistencias(sumaResistencia);
 sumasResistencias(sumaResistencia2);
 sumasResistencias(sumaResistencia3);
 
-//*** Número dividido en mitades **///
+////////********** 2.-Número dividido en mitades ******************/////////////////
 
 const numero1 = 4;
 const numero2 = 10;
@@ -44,7 +44,7 @@ function numDiv (num){
 
 
 
-//**3.- Secret Name **/////
+//////////////////////**************3.- Secret Name *****************//////////////////////
 
 let secretName = ["Esperanza", "Franco", "Nia"];
 let secretName2 = ['Phoebe', 'Ross', 'Chandler', 'Joey', 'Monica', 'Rachel'];
@@ -68,7 +68,7 @@ obtenerIniciales(secretName);
 obtenerIniciales(secretName2);
 obtenerIniciales(secretName3);
 
-//***4.- Online Status ***//
+////////////////****************4.- Online Status *********************////////////////////////////////////
 //Se hace uso de slice para 
 const onlineStatus =  ['mockIng99', 'J0eyPunch', 'glassedFer', 'nancy', 'paquito']
 //Se hace uso de slice para determinar desde que posicion va a tomar para crearme una arreglo nuevo 
@@ -77,7 +77,7 @@ const usuarios = onlineStatus.slice(2);
 console.log(`El usuario ${onlineStatus[0]} y el usuasrio ${onlineStatus[1]} y otro ${usuarios.length} estan conectados ` );
 
 
-///******* 5.- Arreglos multiples***********///////////
+//////////////////////////////******* 5.- Arreglos multiples***********////////////////////////
 const arreglo1 = [2,10];
 const arreglo2 = [17,6]; 
 
@@ -94,7 +94,7 @@ tablaMultiplicar(arreglo1);
 tablaMultiplicar(arreglo2);
 
 
-///*** 6.- Positive dominance in Array ***//
+///////////////////////************** 6.- Positive dominance in Array *********************////////////////////////////
 const positiveDom = [-1, -3, -5, 4, 6767];
 function dominioArray (array){
     //Se declaran arrays vacios para guardar numero negativos y positivos
@@ -120,5 +120,6 @@ function dominioArray (array){
     }
 
 }
+
 
 dominioArray(positiveDom);
