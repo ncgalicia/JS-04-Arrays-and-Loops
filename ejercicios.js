@@ -17,10 +17,12 @@ function sumasResistencias (array){
         //realiza la suma del array
          suma = suma + temporal;
     }
+    
     console.log("La suma es:", suma)
 
 }
 //Se manda a llamar la función
+console.log(`/*** 1.- Suma de Resistencias ***/`)
 sumasResistencias(sumaResistencia);
 sumasResistencias(sumaResistencia2);
 sumasResistencias(sumaResistencia3);
@@ -39,12 +41,13 @@ function numDiv (num){
     }
     console.log(`Los numero partidos son ${numPartidos}`)
 }
+console.log("///**** 2.-Número dividido en mitades ****/////");
  numDiv(numero1);
  numDiv(numero2);
 
 
 
-//////////////////////**************3.- Secret Name *****************//////////////////////
+//////////////////////**************3.- Secret Society *****************//////////////////////
 
 let secretName = ["Esperanza", "Franco", "Nia"];
 let secretName2 = ['Phoebe', 'Ross', 'Chandler', 'Joey', 'Monica', 'Rachel'];
@@ -64,12 +67,14 @@ function  obtenerIniciales (array){
     console.log(`Las iniciales son ${almacenIniciales.sort()}` );
 }
 //manda a llamar la función
+console.log("//////******* Secret Society *******///////");
 obtenerIniciales(secretName);
 obtenerIniciales(secretName2);
 obtenerIniciales(secretName3);
 
 ////////////////****************4.- Online Status *********************////////////////////////////////////
 //Se hace uso de slice para 
+console.log("//////****** 4.- Online Status *******///////");
 const onlineStatus =  ['mockIng99', 'J0eyPunch', 'glassedFer', 'nancy', 'paquito']
 //Se hace uso de slice para determinar desde que posicion va a tomar para crearme una arreglo nuevo 
 // ejemplo ['glassedFer', 'nancy', 'paquito']
@@ -89,7 +94,7 @@ function  tablaMultiplicar (array) {
     }
 
 }
-
+console.log("//////****** 5.- Arreglos Multiples *******///////");
 tablaMultiplicar(arreglo1);
 tablaMultiplicar(arreglo2);
 
@@ -121,5 +126,43 @@ function dominioArray (array){
 
 }
 
-
+console.log("//////****** 6.- Positive dominance in Array *******///////");
 dominioArray(positiveDom);
+
+////**** 7.-Antipodal Average  ******///////////////
+
+
+const anipodo = [1,2,3,5,22,6]
+const anipodo2 = [1,2,3,5,22,6,6]
+function promedio (array){
+    let matriz1 = [];
+    let matriz2 = []
+    //Valida si la logitud dividida / 2 da una numero par para poder dividir el arreglo
+    if (array.length % 2 == 0) {
+        matriz1 = array.slice(0,array.length / 2);
+        matriz2 = array.slice(array.length / 2);
+    //Valida si es un numero primo
+    }if (array.length % 2 != 0){
+        //devuelve el numero entero
+        const indiceDelMedio = Math.floor(array.length / 2);
+        //elimina del arreglo la posición de enmedio
+        array.splice(indiceDelMedio, 1);
+        //asigna la matriz en partes iguales 
+        matriz1 = array.slice(0,array.length / 2);
+        matriz2 = array.slice(array.length / 2);
+        
+    }
+    let sumaResultado=[];
+    //recorreo tanto de la posición inicial como la posición inicial, para que se recorran ambos arreglos 
+    for(let i=0; i < matriz1.length; i++){
+        //Realiza la suma de de las matrices y di
+        sumaResultado.push((matriz1[i]+matriz2[matriz2.length -1 -i])/2);
+        
+    }
+    console.log(sumaResultado);
+}
+
+
+console.log("//////****** 7.-Antipodal Averagey *******///////");
+promedio(anipodo);
+promedio(anipodo2);
