@@ -162,7 +162,6 @@ function promedio (array){
     console.log(sumaResultado);
 }
 
-
 console.log("//////****** 7.-Antipodal Averagey *******///////");
 promedio(anipodo);
 promedio(anipodo2);
